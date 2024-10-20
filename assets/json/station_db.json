@@ -21,23 +21,37 @@
     },
     {
         "url": "http://rmfstream1.interia.pl:8000/rmf_fm",
-        "title": "RMF FM"
+        "title": "RMF FM",
+        "logo": "assets/img/rmf_fm_logo.png"
+    },
+    {
+        "url": "https://rs202-krk-cyfronet.rmfstream.pl/rmf_maxxx_waw",
+        "title": "RMF MAXX",
+        "logo": "assets/img/rmf_maxx_logo.png"
     },
     {
         "url": "http://ic1.smcdn.pl/2380-1.aac",
-        "title": "ESKA"
+        "title": "ESKA",
+        "logo": "assets/img/eska_logo.png"
     },
     {
         "url": "http://ic1.smcdn.pl/3990-1.aac",
-        "title": "VOX FM"
+        "title": "VOX FM",
+        "logo": "assets/img/voxfm_logo.png"
+    },
+    {
+        "url": "http://pl01.cdn.eurozet.pl/plu-waw.mp3",
+        "title": "Plus",
+        "logo": "assets/img/radio_plus_logo.png"
     },
     {
         "url": "http://redir.atmcdn.pl/sc/o2/Eurozet/live/audio.livx?audio=5",
-        "title": "RadioZET"
+        "title": "RadioZET",
+        "logo": "assets/img/radiozet_logo.png"
     },
     {
-        "url": "http://rmfstream1.interia.pl:8000/rmf_classic",
-        "title": "RMF Classic",
-        "logo": "assets/img/rmf_classic_radio_logo.png"
+        "url": "http://redir.atmcdn.pl/sc/o2/Eurozet/live/chillizet.livx",
+        "title": "Chill ZET",
+        "logo": "assets/img/chillzet_logo.png"
     }
 ]

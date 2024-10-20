@@ -1,7 +1,7 @@
 name: piotrek84nn_int_radio_player
 description: "Play Internet radio stream station."
 publish_to: 'piotrek84nn'
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: ^3.5.3
@@ -14,7 +14,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_bloc: ^8.1.6
-  flutter_carplay: ^1.0.3
   flutter_native_splash: ^2.4.0
   flutter_secure_storage: ^9.2.2
   fluttertoast: ^8.2.8
@@ -35,10 +34,16 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/json/station_db.json
     - assets/img/mega_radio_logo.png
     - assets/img/nuta_radio_logo.png
     - assets/img/disco_radio_logo.png
     - assets/img/online_radio_logo.png
     - assets/img/zlote_przeboje_radio_logo.png
-    - assets/img/rmf_classic_radio_logo.png
-    - assets/json/station_db.json
+    - assets/img/rmf_fm_logo.png
+    - assets/img/radiozet_logo.png
+    - assets/img/eska_logo.png
+    - assets/img/voxfm_logo.png
+    - assets/img/chillzet_logo.png
+    - assets/img/radio_plus_logo.png
+    - assets/img/rmf_maxx_logo.png
