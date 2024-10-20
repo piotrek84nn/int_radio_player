@@ -1,0 +1,17 @@
+include: package:very_good_analysis/analysis_options.yaml
+
+linter:
+  rules:
+    file_names: false
+    avoid_renaming_method_parameters: false
+    lines_longer_than_80_chars: false
+    one_member_abstracts: false
+    public_member_api_docs: false
+
+analyzer:
+  exclude:
+    - "**mock.dart"
+    - "**.freezed.dart"
+    - "**.g.dart"
+    - "**.gr.dart"
+    - "**/generated_plugin_registrant.dart"

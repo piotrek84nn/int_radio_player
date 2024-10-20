@@ -1,0 +1,43 @@
+[
+    {
+        "url": "https://www.megaradio.com.pl/stream",
+        "title": "Radio Mega",
+        "logo": "assets/img/mega_radio_logo.png"
+    },
+    {
+        "url": "https://www.radionuta.pl/stream",
+        "title": "Radio Nuta",
+        "logo": "assets/img/nuta_radio_logo.png"
+    },
+    {
+        "url": "https://www.radiodisco.pl/stream",
+        "title": "Radio Disco",
+        "logo": "assets/img/disco_radio_logo.png"
+    },
+    {
+        "url": "http://poznan7.radio.pionier.net.pl:8000/tuba9-1.mp3",
+        "title": "Złote Przeboje",
+        "logo": "assets/img/zlote_przeboje_radio_logo.png"
+    },
+    {
+        "url": "http://rmfstream1.interia.pl:8000/rmf_fm",
+        "title": "RMF FM"
+    },
+    {
+        "url": "http://ic1.smcdn.pl/2380-1.aac",
+        "title": "ESKA"
+    },
+    {
+        "url": "http://ic1.smcdn.pl/3990-1.aac",
+        "title": "VOX FM"
+    },
+    {
+        "url": "http://redir.atmcdn.pl/sc/o2/Eurozet/live/audio.livx?audio=5",
+        "title": "RadioZET"
+    },
+    {
+        "url": "http://rmfstream1.interia.pl:8000/rmf_classic",
+        "title": "RMF Classic",
+        "logo": "assets/img/rmf_classic_radio_logo.png"
+    }
+]
