@@ -73,6 +73,7 @@ class PlayerBloc extends Bloc<PlayerEvents, PlayerStates> {
     PlayEvent event,
     Emitter<PlayerStates> emit,
   ) async {
+    await audioPlayer.stop();
     emit(
       PlayState(
         event.selectedIndex,
@@ -88,8 +89,15 @@ class PlayerBloc extends Bloc<PlayerEvents, PlayerStates> {
         ),
       );
       await audioPlayer.play();
-    } on PlayerException catch (_) {}
+    } on PlayerException catch (e) {
+      e.toString();
+    }
     await stationRepository.setLastPlayedStation(event.selectedIndex);
+    emit(
+      PlayState(
+        event.selectedIndex,
+      ),
+    );
     toast.showToast(
       '$plaingTxt: ${stationRepository.media[event.selectedIndex].title!}',
     );

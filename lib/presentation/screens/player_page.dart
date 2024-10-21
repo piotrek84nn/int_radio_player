@@ -104,20 +104,15 @@ class _PlayWidget extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          if (state.songTitle == null)
-            const _LoadingWidget(
-              isLoading: true,
-            )
-          else
-            const SizedBox(
-              height: 120,
-              child: AnimatedMusicIndicator(
-                numberOfBars: 10,
-                size: 0.95,
-                barStyle: BarStyle.dash,
-                color: mainColor,
-              ),
+          const SizedBox(
+            height: 120,
+            child: AnimatedMusicIndicator(
+              numberOfBars: 10,
+              size: 0.95,
+              barStyle: BarStyle.dash,
+              color: mainColor,
             ),
+          ),
           Expanded(
             child: ListView.builder(
               shrinkWrap: true,
