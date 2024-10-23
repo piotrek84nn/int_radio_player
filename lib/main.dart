@@ -1,3 +1,4 @@
+import 'package:fimber/fimber.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -14,7 +15,7 @@ void main() {
   _locator.initialize();
   final widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-
+  Fimber.plantTree(DebugTree());
   runApp(
     const MyApp(),
   );

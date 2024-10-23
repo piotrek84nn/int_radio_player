@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:fimber/fimber.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
@@ -90,7 +91,7 @@ class PlayerBloc extends Bloc<PlayerEvents, PlayerStates> {
       );
       await audioPlayer.play();
     } on PlayerException catch (e) {
-      e.toString();
+      Fimber.d(e.toString());
     }
     await stationRepository.setLastPlayedStation(event.selectedIndex);
     emit(
