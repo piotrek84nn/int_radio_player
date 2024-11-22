@@ -5,7 +5,6 @@ const String mainWidgetName = 'Radio Player';
 const String defaultLogo = 'assets/img/online_radio_logo.png';
 const String lastPlayedStationUrl = 'lastPlayedStationUrl';
 const String plaingTxt = 'Radio:';
-const String advertiseTxt = 'AD';
 
 const TextStyle appBarTitleStyle = TextStyle(
   color: whiteColor,

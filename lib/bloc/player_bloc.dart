@@ -5,6 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:internet_connection_checker_plus/internet_connection_checker_plus.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:just_audio_background/just_audio_background.dart';
 import 'package:piotrek84nn_int_radio_player/bloc/player_event.dart';
 import 'package:piotrek84nn_int_radio_player/bloc/player_state.dart';
 import 'package:piotrek84nn_int_radio_player/presentation/constants/constant.dart';
@@ -48,10 +49,6 @@ class PlayerBloc extends Bloc<PlayerEvents, PlayerStates> {
       if (event?.info?.title == null || event?.info?.title == _icyData) {
         add(const IcyDataReceivedEvent());
         return;
-      } else if (event?.info?.title == advertiseTxt) {
-        _icyData = event?.info?.title;
-        add(PlayEvent(selectedIndex: state.selectedIndex));
-        return;
       }
 
       _icyData = event?.info?.title;
@@ -81,11 +78,15 @@ class PlayerBloc extends Bloc<PlayerEvents, PlayerStates> {
       ),
     );
     try {
-      final url = stationRepository.media[event.selectedIndex].url;
+      final item = stationRepository.media[event.selectedIndex];
       await audioPlayer.setAudioSource(
         AudioSource.uri(
           Uri.parse(
-            url!,
+            item.url!,
+          ),
+          tag: MediaItem(
+            id: item.url!,
+            title: item.title!,
           ),
         ),
       );
